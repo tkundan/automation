@@ -1,2 +1,2 @@
 # automation
-CI/CD-Dockerised and deployment 
+CI/CD-Dockerised
