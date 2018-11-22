@@ -10,7 +10,7 @@ pipeline {
 		sh "/usr/local/maven/bin/mvn -f $WORKSPACE clean install " 
             }
         }
-        stage('ImageCreation'){
+        /*stage('ImageCreation'){
 			steps {
 				echo 'Dockerizing application ...'
 				sh "/usr/bin/docker build -t java_docker_image ."
@@ -24,6 +24,6 @@ pipeline {
                 	sh "ssh root@10.10.10.10 /usr/bin/docker load -i /root/docker/jenkinsimage.tar"
                 	sh "ssh root@10.10.10.10 /usr/bin/docker run -i -t -d -p 8080:8080 java_docker_image"
                 	}
-            	}	 
+            	}*/	 
          }
     }
