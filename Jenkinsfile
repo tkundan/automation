@@ -17,13 +17,14 @@ pipeline {
 				sh "/usr/bin/docker save -o jenkinsimage.tar java_docker_image"
 			}
         }
-        /*stage('Deployment'){
+        stage('Deployment'){
 		steps{
 			echo 'Deploying docker application on Dev Server...'
-			sh "scp jenkinsimage.tar root@10.10.10.10:/root/docker"
-                	sh "ssh root@10.10.10.10 /usr/bin/docker load -i /root/docker/jenkinsimage.tar"
-                	sh "ssh root@10.10.10.10 /usr/bin/docker run -i -t -d -p 8080:8080 java_docker_image"
+			/usr/bin/docker run -i -t -d -p 8080:8080 java_docker_image
+			//sh "scp jenkinsimage.tar root@10.10.10.10:/root/docker"
+			//sh "ssh root@10.10.10.10 /usr/bin/docker load -i /root/docker/jenkinsimage.tar"
+                	//sh "ssh root@10.10.10.10 /usr/bin/docker run -i -t -d -p 8080:8080 java_docker_image"
                 	}
-            	}*/	 
+            	}	 
          }
     }
