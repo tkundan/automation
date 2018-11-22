@@ -7,7 +7,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-		sh "/usr/local/maven/bin/mvn -f $WORKSPACE clean install " 
+		//sh "/usr/local/maven/bin/mvn -f $WORKSPACE clean install "
+		  sh "/opt/apache-maven-3.6.0/bin/mvn -f $WORKSPACE clean install"
             }
         }
         /*stage('ImageCreation'){
