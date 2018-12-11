@@ -17,4 +17,4 @@ I have created a webhook in github which means as soon as user push the code the
 
 this repository contain Java application, Dockerfile ,Jenkinsfile and README.md file .
 
-Hope I have shared all the information. Please contact me if you have any questions.
+Please contact me if you have any questions.
